@@ -1,0 +1,10 @@
+services:
+  example_worker_service:
+    class:  Drivenow\AsyncWorkersBundle\Worker\ExampleWorker
+    arguments:
+      - '@drivenow_async_worker.repository.rabbitmq_worker_repository'
+
+  drivenow_async_worker.repository.rabbitmq_worker_repository:
+    class: Drivenow\AsyncWorkersBundle\Repository\ExampleTaskRepository
+    arguments: ['@logger']
+

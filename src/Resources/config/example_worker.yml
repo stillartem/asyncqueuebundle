@@ -1,0 +1,15 @@
+async_workers:
+    example2:
+        num_processes: 1
+        max_memory_usage: "256MB"
+        service_name: "example_worker_service"
+        max_execution_time: "1 hours 15 minutes"
+        iterations: 1000
+        timeout_per_seconds: 2
+    example3:
+        num_processes: 1
+        max_memory_usage: "256MB"
+        service_name: "example_worker_service"
+        max_execution_time: "1 hours 15 minutes"
+        iterations: 1000
+        timeout_per_seconds: 2
